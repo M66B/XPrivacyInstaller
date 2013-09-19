@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XPrivacy Installer</string>
+    <string name="title_description">This application will help you to install <b>XPrivacy</b>, the ultimate privacy manager</string>
+    <string name="title_whatis">What is XPrivacy?</string>
+    <string name="title_android">Android version 4.0+</string>
+    <string name="title_noandroid">XPrivacy cannot run on your device, sorry</string>
+    <string name="title_root">Device is rooted</string>
+    <string name="title_noroot">How to root?</string>
+    <string name="title_backup">I have made a full (nandroid) backup</string>
+    <string name="title_settings">I have enabled the setting <i>Unknown sources</i></string>
+    <string name="title_gosettings">Go to security settings</string>
+    <string name="title_xinstalled">Xposed is installed</string>
+    <string name="title_noxinstalled">Dowload/install Xposed</string>
+    <string name="title_xenabled">I have enabled Xposed</string>
+    <string name="title_noxenabled">Go to Xposed/Framework</string>
+    <string name="title_xprivacy">Xprivacy is installed</string>
+    <string name="title_noxprivacy">Download/install Xprivacy</string>
+    <string name="title_enabled">I have enabled XPrivacy</string>
+    <string name="title_goenable">Go to Xposed/Modules</string>
+    <string name="title_reboot">Reboot to finish installation</string>
+
+</resources>

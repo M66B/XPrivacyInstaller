@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dip"
+            android:text="@string/title_description" />
+
+        <Button
+            android:id="@+id/btnWhatIs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_whatis" />
+
+        <CheckBox
+            android:id="@+id/cbAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/title_android" />
+
+        <TextView
+            android:id="@+id/tvAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_noandroid"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/cbRoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/title_root" />
+
+            <Button
+                android:id="@+id/btnRoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_noroot"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llBackup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:id="@+id/cbBackup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_backup" />
+
+                <LinearLayout
+                    android:id="@+id/llSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/cbSettings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_settings" />
+
+                    <Button
+                        android:id="@+id/btnSettings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_gosettings"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/llXposedInstalled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/cbXposedInstalled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:text="@string/title_xinstalled" />
+
+                        <Button
+                            android:id="@+id/btnXposedInstalled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_noxinstalled"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/llXPosedEnabled"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <CheckBox
+                                android:id="@+id/cbXposedEnabled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_xenabled" />
+
+                            <Button
+                                android:id="@+id/btnXposedEnabled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_noxenabled"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@+id/llXPrivacy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone" >
+
+                                <CheckBox
+                                    android:id="@+id/cbXPrivacy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:text="@string/title_xprivacy" />
+
+                                <Button
+                                    android:id="@+id/btnXPrivacy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_noxprivacy"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:id="@+id/llEnabled"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="gone" >
+
+                                    <CheckBox
+                                        android:id="@+id/cbEnabled"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_enabled" />
+
+                                    <Button
+                                        android:id="@+id/btnEnabled"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_goenable"
+                                        android:visibility="gone" />
+
+                                    <Button
+                                        android:id="@+id/btnReboot"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_reboot"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
