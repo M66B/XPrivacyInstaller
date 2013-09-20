@@ -1,4 +1,6 @@
-package biz.bokhorstxprivacy.installer;
+package biz.bokhorst.xprivacy.installer;
+
+import biz.bokhorstxprivacy.installer.R;
 
 import com.stericson.RootTools.RootTools;
 import com.stericson.RootTools.execution.CommandCapture;
