@@ -24,6 +24,13 @@
             android:layout_height="wrap_content"
             android:text="@string/title_whatis" />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dip"
+            android:layout_marginTop="6dip"
+            android:background="@android:color/darker_gray" />
+
         <CheckBox
             android:id="@+id/cbAndroid"
             android:layout_width="wrap_content"
@@ -187,6 +194,13 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dip"
+            android:layout_marginTop="6dip"
+            android:background="@android:color/darker_gray" />
 
         <Button
             android:id="@+id/btnHelp"
