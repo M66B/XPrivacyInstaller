@@ -78,6 +78,7 @@ public class ActivityMain extends Activity {
 		final Button btnEnabled = (Button) findViewById(R.id.btnEnabled);
 		final Button btnReboot = (Button) findViewById(R.id.btnReboot);
 		final Button btnHelp = (Button) findViewById(R.id.btnHelp);
+		final Button btnRate = (Button) findViewById(R.id.btnRate);
 
 		// What is? help
 		View.OnClickListener xda = new View.OnClickListener() {
@@ -91,8 +92,18 @@ public class ActivityMain extends Activity {
 		btnWhatIs.setOnClickListener(xda);
 		btnHelp.setOnClickListener(xda);
 
+		btnRate.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				final Uri uri = Uri.parse("market://details?id=" + getPackageName());
+				final Intent rateAppIntent = new Intent(Intent.ACTION_VIEW, uri);
+				if (getPackageManager().queryIntentActivities(rateAppIntent, 0).size() > 0)
+					startActivity(rateAppIntent);
+			}
+		});
+
 		// Android version
-		cbAndroid.setChecked(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH);
+		cbAndroid.setChecked(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1);
 		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 			tvAndroid.setVisibility(View.VISIBLE);
 		else {
@@ -163,7 +174,7 @@ public class ActivityMain extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://forum.xda-developers.com/showthread.php?t=1574401"));
+				intent.setData(Uri.parse("http://repo.xposed.info/module/de.robv.android.xposed.installer"));
 				startActivity(intent);
 			}
 		});
