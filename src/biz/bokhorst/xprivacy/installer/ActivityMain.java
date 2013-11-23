@@ -57,9 +57,10 @@ public class ActivityMain extends Activity {
 		TextView tvAndroid = (TextView) findViewById(R.id.tvAndroid);
 		Button btnWhatIs = (Button) findViewById(R.id.btnWhatIs);
 		LinearLayout llRoot = (LinearLayout) findViewById(R.id.llRoot);
-		CheckBox cbRoot = (CheckBox) findViewById(R.id.cbRoot);
-		Button btnRoot = (Button) findViewById(R.id.btnRoot);
-		LinearLayout llBackup = (LinearLayout) findViewById(R.id.llBackup);
+		final Button btnCheckRoot = (Button) findViewById(R.id.btnCheckRoot);
+		final CheckBox cbRoot = (CheckBox) findViewById(R.id.cbRoot);
+		final Button btnRoot = (Button) findViewById(R.id.btnRoot);
+		final LinearLayout llBackup = (LinearLayout) findViewById(R.id.llBackup);
 		CheckBox cbBackup = (CheckBox) findViewById(R.id.cbBackup);
 		final LinearLayout llSettings = (LinearLayout) findViewById(R.id.llSettings);
 		final CheckBox cbSettings = (CheckBox) findViewById(R.id.cbSettings);
@@ -106,16 +107,21 @@ public class ActivityMain extends Activity {
 		cbAndroid.setChecked(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1);
 		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 			tvAndroid.setVisibility(View.VISIBLE);
-		else {
-			// Root
-			boolean root = RootTools.isAccessGiven();
-			cbRoot.setChecked(root);
-			if (root)
-				llBackup.setVisibility(View.VISIBLE);
-			else
-				btnRoot.setVisibility(View.VISIBLE);
+		else
 			llRoot.setVisibility(View.VISIBLE);
-		}
+
+		// Check root
+		btnCheckRoot.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				boolean root = RootTools.isAccessGiven();
+				btnCheckRoot.setEnabled(!root);
+				cbRoot.setChecked(root);
+				cbRoot.setVisibility(View.VISIBLE);
+				btnRoot.setVisibility(root ? View.GONE : View.VISIBLE);
+				llBackup.setVisibility(root ? View.VISIBLE : View.GONE);
+			}
+		});
 
 		// Root
 		btnRoot.setOnClickListener(new View.OnClickListener() {

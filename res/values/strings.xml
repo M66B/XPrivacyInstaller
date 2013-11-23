@@ -6,6 +6,7 @@
     <string name="title_whatis">What is XPrivacy?</string>
     <string name="title_android">Android version 4.0.3+</string>
     <string name="title_noandroid">XPrivacy cannot run on this ROM, sorry</string>
+    <string name="title_checkroot">Check for root</string>
     <string name="title_root">Device is rooted</string>
     <string name="title_noroot">How to root?</string>
     <string name="title_backup">I have made a full backup</string>
