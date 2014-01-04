@@ -105,7 +105,7 @@ public class ActivityMain extends Activity {
 
 		// Android version
 		cbAndroid.setChecked(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1);
-		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
 			tvAndroid.setVisibility(View.VISIBLE);
 		else
 			llRoot.setVisibility(View.VISIBLE);
@@ -114,7 +114,11 @@ public class ActivityMain extends Activity {
 		btnCheckRoot.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				boolean root = RootTools.isAccessGiven();
+				boolean root = false;
+				try {
+					root = RootTools.isAccessGiven();
+				} catch (Throwable ignore) {
+				}
 				btnCheckRoot.setEnabled(!root);
 				cbRoot.setChecked(root);
 				cbRoot.setVisibility(View.VISIBLE);
@@ -180,7 +184,7 @@ public class ActivityMain extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://repo.xposed.info/module/de.robv.android.xposed.installer"));
+				intent.setData(Uri.parse("http://dl.xposed.info/latest.apk"));
 				startActivity(intent);
 			}
 		});
@@ -223,7 +227,7 @@ public class ActivityMain extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://repo.xposed.info/module/biz.bokhorst.xprivacy"));
+				intent.setData(Uri.parse("http://www.xprivacy.eu/latest"));
 				startActivity(intent);
 			}
 		});
