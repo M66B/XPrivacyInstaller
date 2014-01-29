@@ -24,6 +24,17 @@
             android:layout_height="wrap_content"
             android:text="@string/title_whatis" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dip"
+            android:layout_marginTop="12dip"
+            android:text="@string/title_steps"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <!-- Requirements -->
+
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dp"
@@ -31,19 +42,47 @@
             android:layout_marginTop="6dip"
             android:background="@android:color/darker_gray" />
 
-        <CheckBox
-            android:id="@+id/cbAndroid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="@string/title_android" />
-
         <TextView
-            android:id="@+id/tvAndroid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_noandroid"
-            android:visibility="gone" />
+            android:layout_marginBottom="6dip"
+            android:text="@string/title_requirements"
+            android:textStyle="bold" />
+
+        <!-- Requirements a -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_a" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/cbAndroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/title_android" />
+
+                <TextView
+                    android:id="@+id/tvAndroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_noandroid"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Requirements b -->
 
         <LinearLayout
             android:id="@+id/llRoot"
@@ -52,26 +91,45 @@
             android:orientation="vertical"
             android:visibility="gone" >
 
-            <Button
-                android:id="@+id/btnCheckRoot"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_checkroot" />
+                android:orientation="horizontal" >
 
-            <CheckBox
-                android:id="@+id/cbRoot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:enabled="false"
-                android:visibility="gone"
-                android:text="@string/title_root" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_b" />
 
-            <Button
-                android:id="@+id/btnRoot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_noroot"
-                android:visibility="gone" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btnCheckRoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_checkroot" />
+
+                    <CheckBox
+                        android:id="@+id/cbRoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="@string/title_root"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnRoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_noroot"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Requirements c -->
 
             <LinearLayout
                 android:id="@+id/llBackup"
@@ -80,11 +138,24 @@
                 android:orientation="vertical"
                 android:visibility="gone" >
 
-                <CheckBox
-                    android:id="@+id/cbBackup"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/title_backup" />
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_c" />
+
+                    <CheckBox
+                        android:id="@+id/cbBackup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_backup" />
+                </LinearLayout>
+
+                <!-- Requirements d -->
 
                 <LinearLayout
                     android:id="@+id/llSettings"
@@ -93,18 +164,37 @@
                     android:orientation="vertical"
                     android:visibility="gone" >
 
-                    <CheckBox
-                        android:id="@+id/cbSettings"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_settings" />
+                        android:orientation="horizontal" >
 
-                    <Button
-                        android:id="@+id/btnSettings"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/title_gosettings"
-                        android:visibility="gone" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_d" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <CheckBox
+                                android:id="@+id/cbSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_settings" />
+
+                            <Button
+                                android:id="@+id/btnSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_gosettings"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Xposed -->
 
                     <LinearLayout
                         android:id="@+id/llXposedInstalled"
@@ -113,19 +203,52 @@
                         android:orientation="vertical"
                         android:visibility="gone" >
 
-                        <CheckBox
-                            android:id="@+id/cbXposedInstalled"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:enabled="false"
-                            android:text="@string/title_xinstalled" />
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="6dip"
+                            android:layout_marginTop="6dip"
+                            android:background="@android:color/darker_gray" />
 
-                        <Button
-                            android:id="@+id/btnXposedInstalled"
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/title_noxinstalled"
-                            android:visibility="gone" />
+                            android:layout_marginBottom="6dip"
+                            android:text="@string/title_xposed"
+                            android:textStyle="bold" />
+                        <!-- Xposed a -->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_a" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <CheckBox
+                                    android:id="@+id/cbXposedInstalled"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:text="@string/title_xinstalled" />
+
+                                <Button
+                                    android:id="@+id/btnXposedInstalled"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_noxinstalled"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!-- Xposed b -->
 
                         <LinearLayout
                             android:id="@+id/llXPosedEnabled"
@@ -134,18 +257,37 @@
                             android:orientation="vertical"
                             android:visibility="gone" >
 
-                            <CheckBox
-                                android:id="@+id/cbXposedEnabled"
-                                android:layout_width="wrap_content"
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/title_xenabled" />
+                                android:orientation="horizontal" >
 
-                            <Button
-                                android:id="@+id/btnXposedEnabled"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/title_noxenabled"
-                                android:visibility="gone" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_b" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical" >
+
+                                    <CheckBox
+                                        android:id="@+id/cbXposedEnabled"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_xenabled" />
+
+                                    <Button
+                                        android:id="@+id/btnXposedEnabled"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_noxenabled"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <!-- XPrivacy -->
 
                             <LinearLayout
                                 android:id="@+id/llXPrivacy"
@@ -154,19 +296,54 @@
                                 android:orientation="vertical"
                                 android:visibility="gone" >
 
-                                <CheckBox
-                                    android:id="@+id/cbXPrivacy"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:enabled="false"
-                                    android:text="@string/title_xprivacy" />
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginBottom="6dip"
+                                    android:layout_marginTop="6dip"
+                                    android:background="@android:color/darker_gray" />
 
-                                <Button
-                                    android:id="@+id/btnXPrivacy"
+                                <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/title_noxprivacy"
-                                    android:visibility="gone" />
+                                    android:layout_marginBottom="6dip"
+                                    android:text="@string/title_xprivacy"
+                                    android:textStyle="bold" />
+
+                                <!-- XPrivacy a -->
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_a" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical" >
+
+                                        <CheckBox
+                                            android:id="@+id/cbXPrivacy"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:enabled="false"
+                                            android:text="@string/title_xpinstalled" />
+
+                                        <Button
+                                            android:id="@+id/btnXPrivacy"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/title_noxprivacy"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- XPrivacy b -->
 
                                 <LinearLayout
                                     android:id="@+id/llEnabled"
@@ -175,25 +352,65 @@
                                     android:orientation="vertical"
                                     android:visibility="gone" >
 
-                                    <CheckBox
-                                        android:id="@+id/cbEnabled"
-                                        android:layout_width="wrap_content"
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/title_enabled" />
+                                        android:orientation="horizontal" >
 
-                                    <Button
-                                        android:id="@+id/btnEnabled"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/title_goenable"
-                                        android:visibility="gone" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/title_b" />
 
-                                    <Button
-                                        android:id="@+id/btnReboot"
-                                        android:layout_width="wrap_content"
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical" >
+
+                                            <CheckBox
+                                                android:id="@+id/cbEnabled"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/title_enabled" />
+
+                                            <Button
+                                                android:id="@+id/btnEnabled"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/title_goenable"
+                                                android:visibility="gone" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <!-- Activate -->
+
+                                    <LinearLayout
+                                        android:id="@+id/llActivate"
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/title_reboot"
-                                        android:visibility="gone" />
+                                        android:orientation="vertical"
+                                        android:visibility="gone" >
+
+                                        <View
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginBottom="6dip"
+                                            android:layout_marginTop="6dip"
+                                            android:background="@android:color/darker_gray" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="6dip"
+                                            android:text="@string/title_activate"
+                                            android:textStyle="bold" />
+
+                                        <Button
+                                            android:id="@+id/btnReboot"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/title_reboot" />
+                                    </LinearLayout>
                                 </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>

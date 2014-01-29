@@ -77,6 +77,7 @@ public class ActivityMain extends Activity {
 		final LinearLayout llEnabled = (LinearLayout) findViewById(R.id.llEnabled);
 		final CheckBox cbEnabled = (CheckBox) findViewById(R.id.cbEnabled);
 		final Button btnEnabled = (Button) findViewById(R.id.btnEnabled);
+		final LinearLayout llActivate = (LinearLayout) findViewById(R.id.llActivate);
 		final Button btnReboot = (Button) findViewById(R.id.btnReboot);
 		final Button btnHelp = (Button) findViewById(R.id.btnHelp);
 		final Button btnRate = (Button) findViewById(R.id.btnRate);
@@ -237,7 +238,7 @@ public class ActivityMain extends Activity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 				btnEnabled.setVisibility(isChecked ? View.GONE : View.VISIBLE);
-				btnReboot.setVisibility(isChecked ? View.VISIBLE : View.GONE);
+				llActivate.setVisibility(isChecked ? View.VISIBLE : View.GONE);
 			}
 		});
 
