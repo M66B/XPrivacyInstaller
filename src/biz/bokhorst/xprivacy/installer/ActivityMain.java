@@ -263,6 +263,12 @@ public class ActivityMain extends Activity {
 		});
 	}
 
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		unregisterReceiver(mReceiver);
+	}
+
 	public boolean isInstalled(String packageName) {
 		try {
 			getPackageManager().getPackageInfo(packageName, 0);
