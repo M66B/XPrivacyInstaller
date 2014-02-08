@@ -17,12 +17,12 @@
     <string name="title_xposed">2. Xposed</string>
     <string name="title_xinstalled">Xposed is installed</string>
     <string name="title_noxinstalled">Dowload/install Xposed</string>
-    <string name="title_xenabled">I have enabled Xposed</string>
+    <string name="title_xenabled">I have enabled Xposed\n(do not reboot yet)</string>
     <string name="title_noxenabled">Go to Xposed/Framework</string>
     <string name="title_xprivacy">3. XPrivacy</string>
     <string name="title_xpinstalled">Xprivacy is installed</string>
     <string name="title_noxprivacy">Download/install Xprivacy</string>
-    <string name="title_enabled">I have enabled XPrivacy</string>
+    <string name="title_enabled">I have enabled XPrivacy\n(do not reboot yet)</string>
     <string name="title_goenable">Go to Xposed/Modules</string>
     <string name="title_activate">4. Activate</string>
     <string name="title_reboot">Reboot to finish installation</string>
