@@ -25,6 +25,7 @@
     <string name="title_enabled">I have enabled XPrivacy\n(do not reboot yet)</string>
     <string name="title_goenable">Go to Xposed/Modules</string>
     <string name="title_activate">4. Activate</string>
+    <string name="title_startonce">Start XPrivacy once</string>
     <string name="title_reboot">Reboot to finish installation</string>
     <string name="title_help">I have a question/feedback</string>
     <string name="title_rate">I want to rate this application</string>

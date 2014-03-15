@@ -78,6 +78,7 @@ public class ActivityMain extends Activity {
 		final CheckBox cbEnabled = (CheckBox) findViewById(R.id.cbEnabled);
 		final Button btnEnabled = (Button) findViewById(R.id.btnEnabled);
 		final LinearLayout llActivate = (LinearLayout) findViewById(R.id.llActivate);
+		final Button btnStartOnce = (Button) findViewById(R.id.btnStartOnce);
 		final Button btnReboot = (Button) findViewById(R.id.btnReboot);
 		final Button btnHelp = (Button) findViewById(R.id.btnHelp);
 		final Button btnRate = (Button) findViewById(R.id.btnRate);
@@ -248,6 +249,17 @@ public class ActivityMain extends Activity {
 				Intent intent = getPackageManager().getLaunchIntentForPackage("de.robv.android.xposed.installer");
 				if (intent != null)
 					startActivity(intent);
+			}
+		});
+
+		btnStartOnce.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				try {
+					Intent intent = getPackageManager().getLaunchIntentForPackage("biz.bokhorst.xprivacy");
+					startActivity(intent);
+				} catch (Throwable ex) {
+				}
 			}
 		});
 

@@ -152,7 +152,8 @@
                         android:id="@+id/cbBackup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_backup" />
+                        android:text="@string/title_backup"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <!-- Requirements d -->
@@ -404,6 +405,12 @@
                                             android:layout_marginBottom="6dip"
                                             android:text="@string/title_activate"
                                             android:textStyle="bold" />
+
+                                        <Button
+                                            android:id="@+id/btnStartOnce"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/title_startonce" />
 
                                         <Button
                                             android:id="@+id/btnReboot"
