@@ -229,7 +229,7 @@ public class ActivityMain extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://www.xprivacy.eu/latest"));
+				intent.setData(Uri.parse("http://repo.xposed.info/module/biz.bokhorst.xprivacy/download/stable"));
 				startActivity(intent);
 			}
 		});
