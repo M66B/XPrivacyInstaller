@@ -208,9 +208,11 @@ public class ActivityMain extends Activity {
 		btnXposedEnabled.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = getPackageManager().getLaunchIntentForPackage("de.robv.android.xposed.installer");
-				if (intent != null)
-					startActivity(intent);
+				Intent intent = new Intent("de.robv.android.xposed.installer.OPEN_SECTION");
+				intent.setPackage("de.robv.android.xposed.installer");
+				intent.putExtra("section", "install");
+				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				startActivity(intent);
 			}
 		});
 
@@ -246,9 +248,11 @@ public class ActivityMain extends Activity {
 		btnEnabled.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = getPackageManager().getLaunchIntentForPackage("de.robv.android.xposed.installer");
-				if (intent != null)
-					startActivity(intent);
+				Intent intent = new Intent("de.robv.android.xposed.installer.OPEN_SECTION");
+				intent.setPackage("de.robv.android.xposed.installer");
+				intent.putExtra("section", "modules");
+				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				startActivity(intent);
 			}
 		});
 
