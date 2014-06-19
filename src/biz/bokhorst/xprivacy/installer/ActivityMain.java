@@ -87,9 +87,12 @@ public class ActivityMain extends Activity {
 		View.OnClickListener xda = new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://forum.xda-developers.com/showthread.php?t=2320783"));
-				startActivity(intent);
+				try {
+					Intent intent = new Intent(Intent.ACTION_VIEW);
+					intent.setData(Uri.parse("http://forum.xda-developers.com/showthread.php?t=2320783"));
+					startActivity(intent);
+				} catch (Throwable ex) {
+				}
 			}
 		};
 		btnWhatIs.setOnClickListener(xda);
@@ -98,10 +101,13 @@ public class ActivityMain extends Activity {
 		btnRate.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				final Uri uri = Uri.parse("market://details?id=" + getPackageName());
-				final Intent rateAppIntent = new Intent(Intent.ACTION_VIEW, uri);
-				if (getPackageManager().queryIntentActivities(rateAppIntent, 0).size() > 0)
-					startActivity(rateAppIntent);
+				try {
+					final Uri uri = Uri.parse("market://details?id=" + getPackageName());
+					final Intent rateAppIntent = new Intent(Intent.ACTION_VIEW, uri);
+					if (getPackageManager().queryIntentActivities(rateAppIntent, 0).size() > 0)
+						startActivity(rateAppIntent);
+				} catch (Throwable ex) {
+				}
 			}
 		});
 
@@ -133,9 +139,12 @@ public class ActivityMain extends Activity {
 		btnRoot.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://www.androidcentral.com/root"));
-				startActivity(intent);
+				try {
+					Intent intent = new Intent(Intent.ACTION_VIEW);
+					intent.setData(Uri.parse("http://www.androidcentral.com/root"));
+					startActivity(intent);
+				} catch (Throwable ex) {
+				}
 			}
 		});
 
@@ -166,8 +175,11 @@ public class ActivityMain extends Activity {
 		btnSettings.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(Settings.ACTION_SECURITY_SETTINGS);
-				startActivity(intent);
+				try {
+					Intent intent = new Intent(Settings.ACTION_SECURITY_SETTINGS);
+					startActivity(intent);
+				} catch (Throwable ex) {
+				}
 			}
 		});
 
@@ -185,9 +197,12 @@ public class ActivityMain extends Activity {
 		btnXposedInstalled.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://dl.xposed.info/latest.apk"));
-				startActivity(intent);
+				try {
+					Intent intent = new Intent(Intent.ACTION_VIEW);
+					intent.setData(Uri.parse("http://dl.xposed.info/latest.apk"));
+					startActivity(intent);
+				} catch (Throwable ex) {
+				}
 			}
 		});
 
@@ -208,11 +223,14 @@ public class ActivityMain extends Activity {
 		btnXposedEnabled.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent("de.robv.android.xposed.installer.OPEN_SECTION");
-				intent.setPackage("de.robv.android.xposed.installer");
-				intent.putExtra("section", "install");
-				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				startActivity(intent);
+				try {
+					Intent intent = new Intent("de.robv.android.xposed.installer.OPEN_SECTION");
+					intent.setPackage("de.robv.android.xposed.installer");
+					intent.putExtra("section", "install");
+					intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+					startActivity(intent);
+				} catch (Throwable ex) {
+				}
 			}
 		});
 
@@ -230,9 +248,12 @@ public class ActivityMain extends Activity {
 		btnXPrivacy.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://repo.xposed.info/module/biz.bokhorst.xprivacy/download/stable"));
-				startActivity(intent);
+				try {
+					Intent intent = new Intent(Intent.ACTION_VIEW);
+					intent.setData(Uri.parse("http://repo.xposed.info/module/biz.bokhorst.xprivacy/download/stable"));
+					startActivity(intent);
+				} catch (Throwable ex) {
+				}
 			}
 		});
 
@@ -248,11 +269,14 @@ public class ActivityMain extends Activity {
 		btnEnabled.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent("de.robv.android.xposed.installer.OPEN_SECTION");
-				intent.setPackage("de.robv.android.xposed.installer");
-				intent.putExtra("section", "modules");
-				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				startActivity(intent);
+				try {
+					Intent intent = new Intent("de.robv.android.xposed.installer.OPEN_SECTION");
+					intent.setPackage("de.robv.android.xposed.installer");
+					intent.putExtra("section", "modules");
+					intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+					startActivity(intent);
+				} catch (Throwable ex) {
+				}
 			}
 		});
 
