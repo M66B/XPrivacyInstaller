@@ -2,16 +2,16 @@
 <resources>
 
     <string name="app_name">XPrivacy Installer</string>
-    <string name="title_description">Cette application va vous aider à installer <b>XPrivacy</b>, le gestionnaire ultime de la vie privée.</string>
-    <string name="title_whatis">Qu\’est-ce que XPrivacy?</string>
-    <string name="title_steps">Pour installer XPrivacy, suivez ces quelques étapes : </string>
+    <string name="title_description">Cette application va vous aider à installer <b>XPrivacy</b>, l\'ultime gestionnaire de vie privée.</string>
+    <string name="title_whatis">Qu\’est-ce que XPrivacy ?</string>
+    <string name="title_steps">Pour installer XPrivacy, suivez ces quelques étapes :</string>
     <string name="title_requirements">1. Pré-requis</string>
     <string name="title_android">Version Android 4.0.3+</string>
     <string name="title_noandroid">XPrivacy ne peut pas fonctionner sur cette ROM, désolé.</string>
     <string name="title_checkroot">Vérification du root</string>
     <string name="title_root">L\’appareil est rooté</string>
     <string name="title_noroot">Comment rooter ?</string>
-    <string name="title_backup">J\’ai fais une sauvegarde</string>
+    <string name="title_backup">J\’ai fait une sauvegarde</string>
     <string name="title_settings">J\’ai activé les <i>Sources inconnues</i></string>
     <string name="title_gosettings">Aller aux paramètres de sécurité</string>
     <string name="title_xposed">2. Xposed</string>
@@ -21,7 +21,7 @@
     <string name="title_noxenabled">Aller à Xposed/Framework</string>
     <string name="title_xprivacy">3. XPrivacy</string>
     <string name="title_xpinstalled">Xprivacy est installé</string>
-    <string name="title_noxprivacy"> Télécharger/installer Xprivacy</string>
+    <string name="title_noxprivacy">Télécharger/installer Xprivacy</string>
     <string name="title_enabled">J\’ai activé XPrivacy (ne pas redémarrer tout de suite)</string>
     <string name="title_goenable">Aller aux Xposed/Modules</string>
     <string name="title_activate">4. Activer</string>
