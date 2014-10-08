@@ -12,7 +12,7 @@
     <string name="title_root">L\’appareil est rooté</string>
     <string name="title_noroot">Comment rooter ?</string>
     <string name="title_backup">J\’ai fais une sauvegarde</string>
-    <string name="title_settings">J\’ai activé les <i>Sources inconnus</i></string>
+    <string name="title_settings">J\’ai activé les <i>Sources inconnues</i></string>
     <string name="title_gosettings">Aller aux paramètres de sécurité</string>
     <string name="title_xposed">2. Xposed</string>
     <string name="title_xinstalled">Xposed est installé</string>
