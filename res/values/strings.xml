@@ -26,7 +26,7 @@
     <string name="title_goenable">Aller aux Xposed/Modules</string>
     <string name="title_activate">4. Activer</string>
     <string name="title_startonce">Lancer XPrivacy une fois</string>
-    <string name="title_reboot">Redémarrer pour terminer l’installation</string>
+    <string name="title_reboot">Redémarrer pour terminer l\’installation</string>
     <string name="title_help">J\’ai une question ou un commentaire</string>
     <string name="title_rate">Je veux noter cette application</string>
     <string name="title_a">a.</string>
