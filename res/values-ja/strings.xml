@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XPrivacy インストーラー</string>
+    <string name="title_description">このアプリは <b>XPrivacy</b> (究極の個人情報管理)のインストールを手助けします</string>
+    <string name="title_whatis">XPrivacy とは?</string>
+    <string name="title_steps">XPrivacy をインストールするには下記の手順に従ってください:</string>
+    <string name="title_requirements">1. 必須要件</string>
+    <string name="title_android">Android バージョン 4.0.3+</string>
+    <string name="title_noandroid">申し訳ありませんが、この ROM では XPrivacy を実行できません</string>
+    <string name="title_checkroot">root の確認</string>
+    <string name="title_root">端末は root 化されています</string>
+    <string name="title_noroot">root を取得するには?</string>
+    <string name="title_backup">端末を完全にバックアップしました</string>
+    <string name="title_settings"><i>提供元不明のアプリ</i>のインストールを許可しました</string>
+    <string name="title_gosettings">セキュリティの設定を開く</string>
+    <string name="title_xposed">2. Xposed</string>
+    <string name="title_xinstalled">Xposed はインストールされています</string>
+    <string name="title_noxinstalled">Xposed をダウンロードしてインストールする</string>
+    <string name="title_xenabled">Xposed を有効化しました\n(まだ再起動しないでください)</string>
+    <string name="title_noxenabled">Xposed/Framework を開く</string>
+    <string name="title_xprivacy">3. XPrivacy</string>
+    <string name="title_xpinstalled">Xprivacy はインストールされています</string>
+    <string name="title_noxprivacy">Xprivacy をダウンロードしてインストールする</string>
+    <string name="title_enabled">XPrivacy を有効化しました\n(まだ再起動しないでください)</string>
+    <string name="title_goenable">Xposed/Modules を開く</string>
+    <string name="title_activate">4. 始動</string>
+    <string name="title_startonce">一度 XPrivacy を起動する</string>
+    <string name="title_reboot">端末を再起動してインストールを完了する</string>
+    <string name="title_help">質問/意見を投稿する</string>
+    <string name="title_rate">このアプリに評価を付ける</string>
+    <string name="title_a">a.</string>
+    <string name="title_b">b.</string>
+    <string name="title_c">c.</string>
+    <string name="title_d">d.</string>
+
+</resources>
