@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XPrivacy Installer</string>
+    <string name="title_description">Diese App hilft Ihnen <b>XPrivacy</b> zu installieren, den ultimativen Privacy Manager.</string>
+    <string name="title_whatis">Was ist XPrivacy?</string>
+    <string name="title_steps">Führen Sie die folgenden Schritte durch, um XPrivacy zu installieren:</string>
+    <string name="title_requirements">1. Anforderungen</string>
+    <string name="title_android">Android Version 4.0.3+</string>
+    <string name="title_noandroid">XPrivacy läuft leider nicht mit diesem ROM</string>
+    <string name="title_checkroot">Auf root-Zugriff prüfen</string>
+    <string name="title_root">root-Zugriff auf diesem Gerät vorhanden</string>
+    <string name="title_noroot">Wie erhält man root-Zugriff?</string>
+    <string name="title_backup">Ich habe ein vollständiges Backup gemacht</string>
+    <string name="title_settings">Ich habe <i>Unbekannte Quellen</i> aktiviert</string>
+    <string name="title_gosettings">Gehen Sie zu \"Einstellungen/Sicherheit\"</string>
+    <string name="title_xposed">2. Xposed</string>
+    <string name="title_xinstalled">Xposed ist installiert</string>
+    <string name="title_noxinstalled">Herunterladen/installieren von Xposed</string>
+    <string name="title_xenabled">Ich habe Xposed aktiviert\n(Gerät noch nicht neu starten)</string>
+    <string name="title_noxenabled">Gehen Sie zu \"Xposed/Framework\"</string>
+    <string name="title_xprivacy">3. XPrivacy</string>
+    <string name="title_xpinstalled">Xprivacy ist installiert</string>
+    <string name="title_noxprivacy">Herunterladen/installieren von Xprivacy</string>
+    <string name="title_enabled">Ich habe XPrivacy aktiviert\n(Gerät noch nicht neu starten)</string>
+    <string name="title_goenable">Gehen Sie zu \"Xposed/Module\"</string>
+    <string name="title_activate">4. Aktivieren</string>
+    <string name="title_startonce">XPrivacy einmal neu starten</string>
+    <string name="title_reboot">Gerät neu starten um die Installation abzuschließen</string>
+    <string name="title_help">Ich habe eine Frage/Anregung</string>
+    <string name="title_rate">Ich möchte diese App bewerten</string>
+    <string name="title_a">a.</string>
+    <string name="title_b">b.</string>
+    <string name="title_c">c.</string>
+    <string name="title_d">d.</string>
+
+</resources>
