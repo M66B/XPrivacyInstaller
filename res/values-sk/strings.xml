@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_description">Táto aplikácia vám pomôže nainštalovať <b>XPrivacy</b>, pokročilého správcu súkromia.</string>
+    <string name="title_whatis">Čo je XPrivacy?</string>
+    <string name="title_steps">Ak chcete nainštalovať XPrivacy, postupujte podľa nasledujúcich krokov:</string>
+    <string name="title_requirements">1. Požiadavky</string>
+    <string name="title_android">Verzia Androidu 4.0.3+</string>
+    <string name="title_noandroid">XPrivacy nefunguje na tejto ROM, prepáčte</string>
+    <string name="title_checkroot">Skontrolovať root</string>
+    <string name="title_root">Zariadenie je rootnuté</string>
+    <string name="title_noroot">Máte root?</string>
+    <string name="title_backup">Mám urobenú úplnú zálohu</string>
+    <string name="title_settings">Mám povolené <i>Neznáme zdroje</i></string>
+    <string name="title_gosettings">Prejsť do nastavení zabezpečenia</string>
+    <string name="title_xposed">2. Xposed</string>
+    <string name="title_xinstalled">Xposed je nainštalovaný</string>
+    <string name="title_noxinstalled">Stiahnuť/nainštalovať Xposed</string>
+    <string name="title_xenabled">Mám povolený Xposed\n(zatiaľ nereštartujte zariadenie)</string>
+    <string name="title_noxenabled">Prejsť do Xposed - Framework</string>
+    <string name="title_xprivacy">3. XPrivacy</string>
+    <string name="title_xpinstalled">XPrivacy je nainštalované</string>
+    <string name="title_noxprivacy">Stiahnuť/nainštalovať XPrivacy</string>
+    <string name="title_enabled">Mám povolené XPrivacy\n(zatiaľ nereštartujte zariadenie)</string>
+    <string name="title_goenable">Prejsť do Xposed - Moduly</string>
+    <string name="title_activate">4. Aktivácia</string>
+    <string name="title_startonce">Raz spustiť XPrivacy</string>
+    <string name="title_reboot">Reštartovať pre dokončenie inštalácie</string>
+    <string name="title_help">Mám otázku/spätnú väzbu</string>
+    <string name="title_rate">Chcem ohodnotiť túto aplikáciu</string>
+    <string name="title_a">a.</string>
+    <string name="title_b">b.</string>
+    <string name="title_c">c.</string>
+    <string name="title_d">d.</string>
+
+</resources>
