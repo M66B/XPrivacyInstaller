@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="app_name">XPrivacy Installer</string>
     <string name="title_description">Táto aplikácia vám pomôže nainštalovať <b>XPrivacy</b>, pokročilého správcu súkromia.</string>
     <string name="title_whatis">Čo je XPrivacy?</string>
     <string name="title_steps">Ak chcete nainštalovať XPrivacy, postupujte podľa nasledujúcich krokov:</string>
