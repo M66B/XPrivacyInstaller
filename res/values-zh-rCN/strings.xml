@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XPrivacy 安装向导</string>
+    <string name="title_description">该应用将帮助您安装 <b>XPrivacy</b>, 终极隐私管理利器.</string>
+    <string name="title_whatis">XPrivacy 是什么?</string>
+    <string name="title_steps">要安装 XPrivacy 只需按以下步骤操作:</string>
+    <string name="title_requirements">1. 要求:</string>
+    <string name="title_android">Android 版本 4.0.3+</string>
+    <string name="title_noandroid">无法运行于此 ROM, 很抱歉</string>
+    <string name="title_checkroot">检测 ROOT 权限</string>
+    <string name="title_root">设备未获取 ROOT 权限</string>
+    <string name="title_noroot">怎样获取 ROOT 权限?</string>
+    <string name="title_backup">我已做一个完整备份</string>
+    <string name="title_settings">我已启用<i>未知来源</i></string>
+    <string name="title_gosettings">进入安全设置启用</string>
+    <string name="title_xposed">2. Xposed</string>
+    <string name="title_xinstalled">Xposed 框架已经安装</string>
+    <string name="title_noxinstalled">下载/安装 Xposed</string>
+    <string name="title_xenabled">"我已启用 Xposed 框架
+(还没重启)"</string>
+    <string name="title_noxenabled">进入 Xposed/框架启用</string>
+    <string name="title_xprivacy">3. XPrivacy</string>
+    <string name="title_xpinstalled">Xprivacy 已经安装</string>
+    <string name="title_noxprivacy">下载/安装 Xprivacy</string>
+    <string name="title_enabled">"我已启用 XPrivacy 模块
+(还没重启)"</string>
+    <string name="title_goenable">进去 Xposed/模块 启用</string>
+    <string name="title_activate">4. 激活</string>
+    <string name="title_startonce">开始运行 XPrivacy</string>
+    <string name="title_reboot">重启设备以完成最后安装</string>
+    <string name="title_help">我有问题/反馈</string>
+    <string name="title_rate">我要评价该应用</string>
+    <string name="title_a">a.</string>
+    <string name="title_b">b.</string>
+    <string name="title_c">c.</string>
+    <string name="title_d">d.</string>
+</resources>
