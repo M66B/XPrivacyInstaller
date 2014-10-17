@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XPrivacy Installer</string>
+    <string name="title_description">Esta aplicación te ayudará a instalar <b>XPrivacy</b>, el administrador definitivo de privacidad.</string>
+    <string name="title_whatis">¿Qué es XPrivacy?</string>
+    <string name="title_steps">Para instalar XPrivacy sólo sigue estos pasos:</string>
+    <string name="title_requirements">1. Requerimientos</string>
+    <string name="title_android">Android version 4.0.3+</string>
+    <string name="title_noandroid">Lo lamentamos, XPrivacy no puede funcionar en este ROM</string>
+    <string name="title_checkroot">Verificar root</string>
+    <string name="title_root">El dispositivo está rooteado</string>
+    <string name="title_noroot">¿Cómo hacer root?</string>
+    <string name="title_backup">Hice un respaldo completo</string>
+    <string name="title_settings">He habilitado <i>Fuentes desconocidas</i></string>
+    <string name="title_gosettings">Ir a opciones de seguridad</string>
+    <string name="title_xposed">2. Xposed</string>
+    <string name="title_xinstalled">Xposed está instalado</string>
+    <string name="title_noxinstalled">Descargar/instalar Xposed</string>
+    <string name="title_xenabled">He habilitado Xposed\n(no reiniciar todavía)</string>
+    <string name="title_noxenabled">Ir a Xposed/Framework</string>
+    <string name="title_xprivacy">3. XPrivacy</string>
+    <string name="title_xpinstalled">Xprivacy está instalado</string>
+    <string name="title_noxprivacy">Descargar/instalar Xprivacy</string>
+    <string name="title_enabled">He habilitado XPrivacy\n(no reiniciar todavía)</string>
+    <string name="title_goenable">Ir a Xposed/Modules</string>
+    <string name="title_activate">4. Activar</string>
+    <string name="title_startonce">Inicia XPrivacy una vez</string>
+    <string name="title_reboot">Reinicia para finalizar la instalación</string>
+    <string name="title_help">Tengo una pregunta/sugerencia</string>
+    <string name="title_rate">Quiero calificar esta aplicación</string>
+    <string name="title_a">a.</string>
+    <string name="title_b">b.</string>
+    <string name="title_c">c.</string>
+    <string name="title_d">d.</string>
+
+</resources>
